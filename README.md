@@ -1,2 +1,2 @@
 # react-template
-The template I use
+React template I use

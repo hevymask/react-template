@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.29.7",
+    "@inlang/paraglide-js": "^3.2.2",
     "@rolldown/plugin-babel": "^0.3.0",
     "@tanstack/router-plugin": "^1.169.0",
     "@types/babel__core": "^7.20.5",
