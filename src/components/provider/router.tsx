@@ -1,8 +1,14 @@
 import { createRouter, RouterProvider as TanstackRouterProvider } from '@tanstack/react-router'
 import { routeTree } from '@/routeTree.gen'
+import { deLocalizeUrl, localizeUrl } from '@/paraglide/runtime.js'
 
 const router = createRouter({
-  routeTree
+  routeTree,
+
+  rewrite: {
+    input: ({ url }) => deLocalizeUrl(url),
+    output: ({ url }) => localizeUrl(url)
+  }
 })
 
 // Set the router types

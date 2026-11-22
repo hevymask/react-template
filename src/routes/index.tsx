@@ -1,11 +1,12 @@
 import { createFileRoute } from '@tanstack/react-router'
+import { m } from '@/paraglide/messages.js'
 
 export const Route = createFileRoute('/')({
-  component: RouteComponent
+  component: App,
 })
 
-function RouteComponent() {
+function App() {
   return (
-    <div>Hello "/"!</div>
+    <div>{m.title()}</div>
   )
 }

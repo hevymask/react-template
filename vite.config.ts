@@ -22,10 +22,28 @@ export default defineConfig({
       project: './paraglide',
       outdir: './src/paraglide',
       emitTsDeclarations: true,
-      strategy: ['cookie', 'baseLocale'],
+      strategy: ['url', 'preferredLanguage', 'baseLocale'],
 
       emitPrettierIgnore: false,
-      emitGitIgnore: false
+      emitGitIgnore: false,
+
+      urlPatterns: [
+        {
+          pattern: '/',
+          localized: [
+            ['ja', '/ja'],
+            ['en', '/en']
+          ]
+        },
+
+        {
+          pattern: '/:path(.*)?',
+          localized: [
+            ['ja', '/ja/:path(.*)?'],
+            ['en', '/en/:path(.*)?']
+          ]
+        }
+      ]
     })
   ],
 

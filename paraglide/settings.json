@@ -9,6 +9,6 @@
   ],
 
   "plugin.inlang.messageFormat": {
-    "pathPattern": "./src/locales/{locale}.json"
+    "pathPattern": "./src/locale/{locale}.json"
   }
 }
