@@ -1,3 +1,11 @@
 {
-  "title": "Hello World"
+  "routes": {
+    "notfound": {
+      "title": "Notfound"
+    },
+
+    "index": {
+      "title": "Hello World"
+    }
+  }
 }

@@ -1,9 +1,11 @@
 import { createRouter, RouterProvider as TanstackRouterProvider } from '@tanstack/react-router'
 import { routeTree } from '@/routeTree.gen'
 import { deLocalizeUrl, localizeUrl } from '@/paraglide/runtime.js'
+import { NotfoundProvider } from '@/components/provider/notfound.tsx'
 
 const router = createRouter({
   routeTree,
+  defaultNotFoundComponent: NotfoundProvider,
 
   rewrite: {
     input: ({ url }) => deLocalizeUrl(url),
