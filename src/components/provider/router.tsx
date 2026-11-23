@@ -7,13 +7,14 @@ const router = createRouter({
   routeTree,
   defaultNotFoundComponent: NotfoundProvider,
 
+  // URL conversion
   rewrite: {
     input: ({ url }) => deLocalizeUrl(url),
     output: ({ url }) => localizeUrl(url)
   }
 })
 
-// Set the router types
+// Set the router types.
 declare module '@tanstack/react-router' {
   interface Register {
     router: typeof router

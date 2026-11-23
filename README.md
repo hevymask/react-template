@@ -1,11 +1,11 @@
 # react-template
-The simple react template site
+Simple react template site
 
 ## How to use?
-1. Clone this repository
-2. Run `pnpm install` to install dependencies
-3. Change `index.html` and `src/lib/projectConfig.ts` to your choice
-4. Run `pnpm dev` to start!
+1. Clone this repository.
+2. Run `pnpm install` to install the dependencies.
+3. Update `index.html` and `src/lib/projectConfig.ts` to match your project.
+4. Run `pnpm dev` to start your project!
 
 ## Technology
 - React

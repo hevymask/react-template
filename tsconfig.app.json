@@ -22,7 +22,7 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
 
-    /* Custum Options */
+    /* Original options */
     "paths": {
       "@/*": ["./src/*"]
     },
