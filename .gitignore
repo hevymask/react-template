@@ -4,6 +4,7 @@ dist/
 
 paraglide/cache/
 src/paraglide/
+src/routeTree.gen.ts
 
 # Secret
 .env*

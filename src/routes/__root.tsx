@@ -8,6 +8,7 @@ export const Route = createRootRoute({
       url: window.location.href
     })
 
+    // Make page reload intentionally
     if (srr.shouldRedirect && srr.redirectUrl) {
       window.location.replace(srr.redirectUrl.href)
     }

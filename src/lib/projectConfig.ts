@@ -1,10 +1,9 @@
 import z from 'zod'
 
+type Config = z.infer<typeof configSchema>
 const configSchema = z.object({
   appName: z.string()
 })
-
-type Config = z.infer<typeof configSchema>
 
 function setConfig(config: Config) {
   return configSchema.parse(config)

@@ -11,10 +11,10 @@ The simple react template site
 - React
 - Vite
 - TypeScript
+- Cloudflare(wrangler)
 - Tailwind CSS
 - shadcn/ui(Radix UI)
-- Cloudflare(wrangler)
 - Tanstack Router
-- Paraglide
+- Paraglide js
 - Zod
 - usehooks-ts
