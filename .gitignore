@@ -1,8 +1,9 @@
 # Unnecessary
 node_modules/
 dist/
+
 paraglide/cache/
 src/paraglide/
 
 # Secret
-*.env
+.env*
